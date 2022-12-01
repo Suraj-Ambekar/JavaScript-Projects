@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font: "loto";
+}
+
+body{
+    height: 100vh;
+    background-image: url("library.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading-section{
+    border: 2px solid black;
+    background-color: rgb(32, 30, 30);
+    color: white;
+}
+
+.quote-section{
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 2rem;
+    background-color: white;
+}
+
+.quote{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+}
+.author{
+    margin-top: 1rem;
+    color: red;
+}
+.btn{
+    margin-top: 1rem;
+    background-color: gray;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border-radius: 10px;
+}
