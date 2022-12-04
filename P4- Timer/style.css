@@ -1,0 +1,61 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    height: 100vh;
+    background: url("swimming.jpg") no-repeat center center/cover;
+    /* background-image: url("swimming.jpg");
+    background-repeat: no-repeat;
+    background-size: 200%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* width: 60%; */
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 20px;
+}
+.timer{
+    width: 100%;
+    font-size: 6rem;
+    font-weight: 500;
+}
+.buttons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+button{
+    border: none;
+}
+#play{
+    background-color: lightgreen;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+#pause{
+    background-color: rgb(237, 197, 52);
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+#reset{
+    background-color: rgb(237, 55, 52);
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
