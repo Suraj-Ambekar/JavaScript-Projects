@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(toDo.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container{
+    background-color: white;
+    width: 350px;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    flex: 1;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#add-task:hover{
+    background-color: green;
+    color: white;
+}
+
+.task{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.li{
+    list-style: none;
+    flex: 5;
+}
+.check, .delete{
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .3rem;
+    font-weight: 500;
+}
+.check{
+    background-color: rgb(13, 191, 13);
+    color: white;
+}
+.delete{
+    background-color: red;
+    color: white;
+}
+
+
