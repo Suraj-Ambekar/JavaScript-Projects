@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    /* height: 500px; */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow: 0 0 20px white;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container h1,span{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.container .buttons{
+    display: flex;
+    gap: 2rem;
+}
+.container .buttons button{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 7px white; 
+}
+
+.container .buttons #decrease{
+    background-color: rgb(233, 27, 27);
+    color: white;
+}
+.container .buttons #increase{
+    background-color: rgb(55, 220, 55);
+}
