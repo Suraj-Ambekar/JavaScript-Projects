@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 2px solid white;
+    background-color: red;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.container #code{
+    border: 2px solid black;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.container #btn{
+    background-color: black;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 900;
+}
