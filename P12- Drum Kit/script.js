@@ -23,3 +23,26 @@ window.addEventListener("keydown",function(e){
     const keys = document.querySelectorAll('.div');
     keys.forEach(key => key.addEventListener("transitionend",removeTransition));
 });
+
+//Click event to work on mobile to
+const divs = document.querySelectorAll(".div");
+divs.forEach((div) => {
+  div.addEventListener("click", function () {
+    const keyCode = this.getAttribute("data-key");
+    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+    this.classList.add("playing");
+
+    function removeTransition(e){
+        if(e.propertyName !== 'transform') return;
+
+        this.classList.remove("playing");
+    }
+
+    const keys = document.querySelectorAll('.div');
+    keys.forEach(key => key.addEventListener("transitionend",removeTransition));
+  });
+});
