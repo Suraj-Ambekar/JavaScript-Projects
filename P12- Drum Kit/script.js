@@ -4,8 +4,22 @@ window.addEventListener("keydown",function(e){
 
     // created audio variable to select the pressed key
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    console.log(audio);
+    const key = document.querySelector(`.div[data-key="${e.keyCode}"]`);
+    // console.log(audio);
     if(!audio) return;
-
+    // if audio is present then play the audio file
+    audio.currentTime = 0;
     audio.play()
+    // console.log(key)
+    key.classList.add("playing");
+
+    //to remove the transition effect
+    function removeTransition(e){
+        if(e.propertyName !== 'transform') return;
+
+        this.classList.remove("playing");
+    }
+
+    const keys = document.querySelectorAll('.div');
+    keys.forEach(key => key.addEventListener("transitionend",removeTransition));
 });
