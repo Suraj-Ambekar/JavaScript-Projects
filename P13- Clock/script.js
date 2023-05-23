@@ -3,6 +3,7 @@ const minuteHand = document.querySelector(".min-hand");
 const hoursHand = document.querySelector(".hour-hand");
 function setDate(){
     const now = new Date();
+    const sound = new Audio("tick.mp3");
 
     // used date object to get current seconds
     const seconds = now.getSeconds();
@@ -19,6 +20,8 @@ function setDate(){
     const hours = now.getHours();
     const hoursDegrees = ((hours/12)*360)+  ((mins/60)*30) + 90;
     hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+    sound.play();
 }
 
 setInterval(setDate, 1000);
