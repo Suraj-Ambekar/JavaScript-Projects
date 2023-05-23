@@ -40,3 +40,27 @@ body{
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+
+.twelve{
+    position: absolute;
+    top: -5%;
+    right: 45%;
+}
+
+.three{
+    position: absolute;
+    top: 38%;
+    right: 5%;
+}
+
+.six{
+    position: absolute;
+    bottom: -5%;
+    right: 47%;
+}
+
+.nine{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
